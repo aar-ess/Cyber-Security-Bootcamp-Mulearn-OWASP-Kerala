@@ -26,7 +26,7 @@
 - The attacker released malicious package versions that contained obfuscated JavaScript: browser transaction interception (replace destination wallet addresses), credential/2FA stealers, or scripts that attempted to harvest secrets from developer environments. Because these libraries are transitive dependencies, the blast radius was huge (billions of weekly downloads). 
 
 **Mitigation / resolution steps taken or recommended:**
-- npm and security teams rapidly revoked malicious releases and removed the compromised packages from the registry. CISA and other vendors published detection/mitigation guidance: rotate developer credentials, audit lockfiles (`package-lock.json`, `yarn.lock`), pin package versions to known-good releases, scan repositories and CI artifacts for infected packages, and restore from clean caches/artifacts where possible. Organizations were urged to review any client-side code that interacts with wallets. citeturn3search6turn3search1
+- npm and security teams rapidly revoked malicious releases and removed the compromised packages from the registry. CISA and other vendors published detection/mitigation guidance: rotate developer credentials, audit lockfiles (`package-lock.json`, `yarn.lock`), pin package versions to known-good releases, scan repositories and CI artifacts for infected packages, and restore from clean caches/artifacts where possible. Organizations were urged to review any client-side code that interacts with wallets.
 
 ---
 
