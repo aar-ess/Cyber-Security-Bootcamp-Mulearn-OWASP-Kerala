@@ -42,8 +42,6 @@ The authentication logic constructs SQL queries by concatenating raw user input 
 
 ## Evidence (screenshots)
 
-> **Note:** Image paths reference files provided during the assessment. If you want the images embedded into this markdown file, ensure these files are available alongside the markdown file at the referenced paths.
-
 1. **Login attempt & server log**  
    Shows server constructing and running a concatenated SQL query for authentication (raw user input visible in the log).
    ![User Login](./assets/1.png)
