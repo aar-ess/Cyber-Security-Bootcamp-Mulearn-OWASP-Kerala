@@ -14,7 +14,7 @@ This report documents the sequence, impact, root cause, and evidence. Reproducti
 
 ---
 
-## Key timeline (reconstructed)
+## Key timelines
 
 1. Logged in as a regular user and submitted a loan request (user view).
 2. Performed an authentication attempt with crafted input that exploited SQL injection at the `POST /login` endpoint.
@@ -88,8 +88,7 @@ The authentication logic constructs SQL queries by concatenating raw user input 
 
 ## Long-term recommendations
 
-- Enforce **least-privilege** for all DB accounts used by the application.  
-- Add **SAST** tools to CI pipelines and schedule regular **DAST** and manual penetration tests focused on authentication and business logic.  
+- Enforce **least-privilege** for all DB accounts used by the application. 
 - Introduce **MFA for admin accounts** and sensitive operations (approval workflows).  
 - Add **anomaly detection and alerts** for unusual admin actions (e.g., approvals performed after abnormal logins, logins from new IPs, or bulk approvals).  
 - Implement **change control and approval workflows** for critical business actions (e.g., require multi-person approval for high-risk financial transactions).  
@@ -100,7 +99,7 @@ The authentication logic constructs SQL queries by concatenating raw user input 
 ## Verification plan
 
 1. Patch the codebase to use parameterized queries and hashed-password verification.  
-2. Deploy changes to a staging environment and run automated **DAST** and unit tests that assert injection strings cannot bypass authentication.  
+2. Deploy changes to a staging environment and run automated and unit tests that assert injection strings cannot bypass authentication.  
 3. Perform an authorized, manual retest in a controlled environment (approved by security leads) to validate the fix.  
 4. Monitor production logs for anomalous admin actions and failed/suspicious login attempts following deployment.  
 5. Conduct a post-mortem and update incident response and secure coding guidelines.
