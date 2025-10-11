@@ -1,7 +1,5 @@
 # Incident Overview: Record-Breaking 22.2 Tbps DDoS Attack
 
-> This summary is based on the most recent, record-breaking DDoS attack mitigated by Cloudflare. The initial 11.5 Tbps record was surpassed just weeks later. This version corrects misinformation that Cloudflare was the victim and includes the updated, higher figures.
-
 ---
 
 ## Incident Details
