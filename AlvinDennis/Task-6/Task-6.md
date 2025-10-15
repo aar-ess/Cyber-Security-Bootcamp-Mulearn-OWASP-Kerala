@@ -40,7 +40,7 @@ Accessed at `https://localhost:3333`.
 
 1. **Install & start GoPhish:** Downloaded from the official repository and launched with `./gophish`.  
 2. **Admin hardening:** Logged in at `https://localhost:3333` and changed the default admin password immediately.  
-3. **Create sending profile:** `Sending Profiles → New Profile` — entered SMTP `smtp.gmail.com:25`, Gmail account and password, used **Send Test Email** to verify connectivity and add my sending profile.  
+3. **Create sending profile:** `Sending Profiles → New Profile` — entered SMTP `smtp.gmail.com:25`, Gmail account and password, used **Send Test Email** to verify connectivity and add my sending profile for usage.  
 4. **Landing page setup:** `Landing Pages → New Page` — cloned Google login form and enabled capture data and password. Saved page.  
 5. **Create email template:** `Email Templates` — built HTML email with personalization placeholders; verified rendering.  
 6. **Build target group:** `Users & Groups` — created `test` and added the single user.  
@@ -60,6 +60,7 @@ Accessed at `https://localhost:3333`.
 - **Emails dispatched:** 1  
 
 - **GoPhish dashboard status:** Sent = 1 (no additional events — Opened / Clicked / Submitted — were observed at the time of documentation.
+
 ---
 
 ## Conclusion
