@@ -12,8 +12,7 @@
 - Verify end‑to‑end operation of GoPhish on a local host (`https://localhost:3333`).  
 - Confirm ability to send campaign email via an SMTP sending profile.  
 - Validate landing page functionality including capture of submitted form data and passwords.  
-- Confirm reporting and status updates in GoPhish (Sent / Opened / Clicked / Submitted).  
-- Provide recommendations for secure and ethical handling of captured data, and hardening the environment.
+- Confirm reporting and status updates in GoPhish (Sent / Opened / Clicked / Submitted).
 
 ---
 
@@ -59,10 +58,8 @@ Accessed at `https://localhost:3333`.
 ## Campaign results
 
 - **Emails dispatched:** 1  
-- **GoPhish dashboard status:** Sent = 1 (no additional events — Opened / Clicked / Submitted — were observed at the time of documentation)  
-- **Captured credentials:** _(If the test user submitted credentials, list here. Otherwise: No submissions recorded.)_  
-  - **Handling note:** Captured credentials are sensitive; do not transmit in plaintext. Store or delete per policy.
 
+- **GoPhish dashboard status:** Sent = 1 (no additional events — Opened / Clicked / Submitted — were observed at the time of documentation.
 ---
 
 ## Conclusion
